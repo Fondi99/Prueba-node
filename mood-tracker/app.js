@@ -29,6 +29,9 @@ switch(comando){
     case undefined:
         console.log("Tenes que pasar una accion");
         break;
+    case 'excel':
+        funciones.convertJsonToExcel();
+        break;
     default:
         console.log("No entiendo que quieres hacer");
         break;
