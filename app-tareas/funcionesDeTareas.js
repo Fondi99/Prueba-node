@@ -7,7 +7,7 @@ let archivoTareas={
         return JSON.parse(tareas)
     },
     escribirJSON: function(array){
-        fs.writeFileSync('tareas.json', JSON.stringify(array));
+        fs.writeFileSync('tareas.json', JSON.stringify(array,null, 2));
     },
     guardarTareas: function(tarea){
         const listaDeTareas=archivoTareas.leerArchivo()
